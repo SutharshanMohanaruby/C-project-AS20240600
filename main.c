@@ -70,3 +70,56 @@ void citymanagement()
     }
 
 }
+
+
+void distancemanagement()
+{
+    if(cityCount<2)
+    {
+        printf("Not enough Cities Add min 2 cities");
+        return;
+    }
+    int choice,i,j;
+    do
+    {
+        printf("1. Enter or Edit Distances\n");
+        printf("2. View Distance Table\n");
+        printf("Enter your choice: ");
+        scanf("%d",&choice);
+
+    switch(choice)
+    {
+      case 1:
+           printf("\nEnter distances between cities (in km)\n");
+           for(i=0; i<cityCount; i++)
+           {
+              for(j=i+1; j<cityCount; j++)
+              {
+                 printf("Distance from %s to %s : ",cities[i],cities[j]);
+                 scanf("%d",&distance[i][j]
+                 distance[j][i] = distance[i][j];
+
+
+              }
+           }
+           printf("\nAll distances saved\n");
+           break;
+
+
+      default:
+        printf("Invalid choice!\n");
+
+
+
+    }
+
+    }
+    while(choice!=0);
+}
+
+
+
+
+
+
+
