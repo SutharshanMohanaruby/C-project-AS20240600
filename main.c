@@ -6,6 +6,17 @@
 #define FUEL_PRICE 310.0
 
 
+void menu();
+void citymanagement();
+void distancemanagement();
+void vehiclemanagement();
+void requesthandling();
+void calculations();
+void distancemanagement();
+void performancereport();
+
+
+
 
 int main()
 {
