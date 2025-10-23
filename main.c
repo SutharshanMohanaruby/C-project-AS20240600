@@ -149,7 +149,7 @@ void requesthandling()
       return;
     }
 
-void calculationsanddisplaybill()
+void calculations()
 {
     int dist,vehicleRate[vehicleType],city1,city2;
     float baseCost,fuelUsed,fuelCost,totalCost,profit,customerCharge,time;
@@ -162,6 +162,10 @@ void calculationsanddisplaybill()
     customerCharge = totalCost + profit;
     time = (float)dist / vehicleSpeed[vehicleType];
 
+}
+
+int deliveryrecords()
+{
     printf("\n========== DELIVERY COST ESTIMATION ==========\n");
     printf("From: %s\nTo: %s\n", cities[city1], cities[city2]);
     printf("Distance: %d km\n", dist);
