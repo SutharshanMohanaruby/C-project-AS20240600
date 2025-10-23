@@ -50,6 +50,21 @@ return 0;
 
 }
 
+void menu()
+{
+
+    printf("\n\t\t LOGISTICS MANAGEMENT\t\t\n");
+    printf("1.Citymanagement\n");
+    printf("2.Distancemanagement\n");
+    printf("3.Vehiclemanagement\n");
+    printf("4.Requesthandling\n");
+    printf("5.Calculations\n");
+    printf("6.Deliveryrecords\n");
+    printf("7.Performancereport\n");
+    printf("8.Exit\n");
+
+}
+
 void citymanagement()
 {
     int choice,n,find,i,j;
