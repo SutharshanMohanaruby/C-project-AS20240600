@@ -180,6 +180,19 @@ void calculationsanddisplaybill()
 
 }
 
+void performancereport()
+{
+  if (totalDeliveries == 0)
+  {
+     printf("No deliveries completed yet!\n");
+     return;
+  }
+  printf("Total Deliveries Completed : %d\n", totalDeliveries);
+  printf("Total Distance Covered     : %.2f km\n", totalDistance);
+  printf("Average Distance/Delivery  : %.2f km\n", totalDistance / totalDeliveries);
+  printf("Total Revenue              : %.2f LKR\n", totalRevenue);
+  printf("Total Profit               : %.2f LKR\n", totalProfit);
+}
 
 
 
