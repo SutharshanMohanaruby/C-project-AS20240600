@@ -117,6 +117,43 @@ void distancemanagement()
     while(choice!=0);
 }
 
+void requesthandling()
+{
+    int weight,vehicleType,city1,city2;
+    if (cityCount < 2)
+    {
+       printf("\nAdd at least 2 cities and distances first!\n");
+       return;
+    }
+
+    printf("\nEnter source city index: ");
+    scanf("%d", &city1);
+    printf("Enter destination city index: ");
+    scanf("%d", &city2);
+
+    if(city1==city2)
+    {
+        printf("Distance not set between these cities\n");
+        return;
+    }
+    printf("Enter weight (kg):");
+    scanf("%d", &weight);
+    printf("Select Vehicle:\n");
+    printf("1.Van(100kg)\n2.Truck(5000kg)\n3Lorry(10000kg)\n");
+    printf("Enter vehicle type(1-3):");
+    scanf("%d",&vehicleType);
+
+    if (weight > vehicleCapacity[vehicleType])
+    {
+      printf("Weight exceeds vehicle capacity!\n");
+      return;
+    }
+
+
+
+
+}
+
 
 
 
