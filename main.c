@@ -115,7 +115,16 @@ void distancemanagement()
 
     }
     while(choice!=0);
+
+void vehiclemanagement()
+{
+    printf("Type\tCapacity(kg)\tRate per km(LKR)\tAvg Speed(km/h)\Fuel Efficiency(km/l)\n"),
+    printf("Van\t1000\t\t30\t\t60\t\t12\n");
+    printf("Truck\t5000\t\t40\t\t50\t\t6\n");
+    printf("Lorry\t10000\t\t80\t\t45\t\t4\n");
+
 }
+
 
 void requesthandling()
 {
