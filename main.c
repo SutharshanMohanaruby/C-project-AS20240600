@@ -6,9 +6,49 @@
 
 int main()
 {
-    int i;
+    int choice;
+do
+{
+    memu();
+    printf("Enter your choice:");
+    scanf("%d", &choice);
+
+    switch (choice)
+    {
+      case 1:
+          citymanagement();
+          break;
+      case 2:
+          distancemanagement();
+          break;
+      case 3:
+           vehiclemanagement();
+           break;
+     case 4:
+          requesthandling();
+          break;
+     case 5:
+          calculations();
+          break;
+     case 6:
+          deliveryrecords();
+          break;
+     case 7:
+         performancereport();
+         break;
+     case 8:
+         printf("Exiting program..\n");
+         break;
+     default:
+         printf("Invalid choice!\n");
+    }
 }
-;
+while(choice!=8);
+
+return 0;
+
+
+}
 
 void citymanagement()
 {
