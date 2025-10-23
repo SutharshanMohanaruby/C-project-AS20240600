@@ -9,7 +9,7 @@ int main()
     int choice;
 do
 {
-    memu();
+    menu();
     printf("Enter your choice:");
     scanf("%d", &choice);
 
