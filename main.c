@@ -5,6 +5,10 @@
 #define MAX_DELIVERIES 50
 #define FUEL_PRICE 310.0
 
+char cities[MAX_CITIES][50];
+int distance[MAX_CITIES][MAX_CITIES];
+int cityCount = 0;
+
 
 void menu();
 void citymanagement();
