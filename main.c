@@ -39,35 +39,32 @@ void citymanagement()
     else if(choice==2)
     {
         printf("Enter city name to rename:");
-        scanf("%s",name);
+        scanf("%s",name );
         printf("Enter new name for %s:",name);
         scanf("%s",newname);
         strcpy(name,newname);
         printf("City renamed successfully!\n");
+
     }
 
     else if(choice==3)
     {
-        printf("Enter city name to remove:");
-        scanf("%s",name);
-        for(i=0;i<cityCount;i++)
+        printf("Enter city index to remove:");
+        scanf("%d",&i);
+        if (i >= 0 && i < cityCount)
         {
-            if(strcmp(cities[i],name)==0)
+            for (int j = i; j < cityCount - 1; j++)
             {
-                find=1;
-                for(j=i;j<cityCount-1;j++)
-                {
-                    strcpy(cities[j],cities[j+1]);
-                }
-                cityCount--;
-                printf("City '%s' removed successfully!\n",name);
-                break;
+                strcpy(cities[j], cities[j + 1]);
             }
-
+            cityCount--;
+            printf("City removed!\n");
         }
-        if(find!=1)
-            printf("City '%s' not found!\n",name);
-    }
+        else
+        {
+          printf("Invalid index!\n");
+        }
+        break;
 
 }
 
