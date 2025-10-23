@@ -149,6 +149,37 @@ void requesthandling()
       return;
     }
 
+void calculationsanddisplaybill()
+{
+    int dist,vehicleRate[vehicleType],city1,city2;
+    float baseCost,fuelUsed,fuelCost,totalCost,profit,customerCharge,time;
+
+    baseCost = dist * vehicleRate[vType] * (1 + (float)weight / 10000);
+    fuelUsed = (float)dist / vehicleEfficiency[vehicleType];
+    fuelCost = fuelUsed * FUEL_PRICE;
+    totalCost = baseCost + fuelCost;
+    profit = baseCost * 0.25;
+    customerCharge = totalCost + profit;
+    time = (float)dist / vehicleSpeed[vehicleType];
+
+    printf("\n========== DELIVERY COST ESTIMATION ==========\n");
+    printf("From: %s\nTo: %s\n", cities[city1], cities[city2]);
+    printf("Distance: %d km\n", dist);
+    printf("Vehicle: %s\n", vehicleNames[vehicleType]);
+    printf("Weight: %d kg\n", weight);
+    printf("----------------------------------------------\n");
+    printf("Base Cost: %.2f LKR\n", baseCost);
+    printf("Fuel Used: %.2f L\n", fuelUsed);
+    printf("Fuel Cost: %.2f LKR\n", fuelCost);
+    printf("Operational Cost: %.2f LKR\n", totalCost);
+    printf("Profit (25%%): %.2f LKR\n", profit);
+    printf("Customer Charge: %.2f LKR\n", customerCharge);
+    printf("Estimated Time: %.2f hours\n", time);
+    printf("==============================================\n");
+
+
+}
+
 
 
 
