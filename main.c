@@ -16,7 +16,6 @@ void distancemanagement();
 void vehiclemanagement();
 void requesthandling();
 void calculations();
-void distancemanagement();
 void performancereport();
 
 
