@@ -66,8 +66,7 @@ do
          printf("Invalid choice!\n");
     }
 }
-while(choice!=8);
-
+while (choice != 8);
 return 0;
 
 
@@ -91,7 +90,7 @@ void menu()
 void citymanagement()
 {
     int choice,n,find,i,j;
-    char cities[],name[50],newname[50];
+    char cities[50],name[50],newname[50];
     printf("1.Add city\n");
     printf("2.Rename city\n");
     printf("3.Remove city\n");
@@ -263,10 +262,11 @@ void requesthandling()
 
 void calculations()
 {
-    int dist,vehicleRate[vehicleType],city1,city2;
-    float baseCost,fuelUsed,fuelCost,totalCost,profit,customerCharge,time;
+    int dist,vehicleRate[vehicleType],city1,city2,weight;
+    float baseCost,fuelUsed,fuelCost,totalCost,profit,customerCharge,time,vehicleSpeed[];
+    char vehicleEfficiency[];
 
-    baseCost = dist * vehicleRate[vType] * (1 + (float)weight / 10000);
+    baseCost = dist * vehicleRate[vechileType] * (1 + (float)weight / 10000);
     fuelUsed = (float)dist / vehicleEfficiency[vehicleType];
     fuelCost = fuelUsed * FUEL_PRICE;
     totalCost = baseCost + fuelCost;
