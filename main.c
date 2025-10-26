@@ -101,7 +101,7 @@ void citymanagement()
             printf("space not enough");
             citymanagement();
         }
-        for (i=0;i<=n;n++)
+        for (i=0;i<n;n++)
         {
             printf("Enter city name:");
             scanf("%s" ,cities[cityCount]);
