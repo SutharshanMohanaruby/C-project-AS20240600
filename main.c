@@ -188,6 +188,18 @@ void distancemanagement()
            }
            printf("\nAll distances saved\n");
            break;
+      case 2:
+          printf("\nDistance Table:\n");
+          for (i = 0; i < cityCount; i++)
+          {
+             for (j = 0; j < cityCount; j++)
+             {
+               printf("%4d ", distance[i][j]);
+             }
+             printf("\n");
+          }
+          break;
+
 
 
       default:
