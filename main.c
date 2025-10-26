@@ -86,7 +86,7 @@ void menu()
 void citymanagement()
 {
     int choice,n,find,i,j;
-    char cities[],name,newname;
+    char cities[],name[50],newname[50];
     printf("1.Add city\n");
     printf("2.Rename city\n");
     printf("3.Remove city\n");
