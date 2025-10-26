@@ -272,8 +272,9 @@ void calculations()
 
 }
 
-int deliveryrecords()
+int deliveryrecords(int city1, int city2, int dist, int vehicleType, int weight, float baseCost, float fuelUsed, float fuelCost, float totalCost, float profit, float customerCharge, float time))
 {
+
     printf("\n========== DELIVERY COST ESTIMATION ==========\n");
     printf("From: %s\nTo: %s\n", cities[city1], cities[city2]);
     printf("Distance: %d km\n", dist);
