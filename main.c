@@ -104,10 +104,11 @@ void citymanagement()
         for (i=0;i<=n;n++)
         {
             printf("Enter city name:");
-            scanf("%s"cities[cityCount]);
+            scanf("%s" ,cities[cityCount]);
             cityCount++;
             printf("City added successfully!\n");
         }
+    }
 
     else if(choice==2)
     {
@@ -138,6 +139,7 @@ void citymanagement()
           printf("Invalid index!\n");
         }
         break;
+    }
 
 }
 
@@ -166,7 +168,7 @@ void distancemanagement()
               for(j=i+1; j<cityCount; j++)
               {
                  printf("Distance from %s to %s : ",cities[i],cities[j]);
-                 scanf("%d",&distance[i][j]
+                 scanf("%d",&distance[i][j]);
                  distance[j][i] = distance[i][j];
 
 
@@ -185,6 +187,7 @@ void distancemanagement()
 
     }
     while(choice!=0);
+}
 
 void vehiclemanagement()
 {
@@ -227,6 +230,7 @@ void requesthandling()
       printf("Weight exceeds vehicle capacity!\n");
       return;
     }
+}
 
 void calculations()
 {
@@ -279,7 +283,7 @@ void performancereport()
 
 
 
-}
+
 
 
 
