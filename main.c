@@ -116,8 +116,20 @@ void citymanagement()
         scanf("%s",name );
         printf("Enter new name for %s:",name);
         scanf("%s",newname);
-        strcpy(name,newname);
-        printf("City renamed successfully!\n");
+        for (i = 0; i < cityCount; i++)
+        {
+          if (strcmp(cities[i], name) == 0)
+          {
+            strcpy(cities[i], newname);
+            printf("City renamed successfully!\n");
+            return;
+          }
+          else
+          {
+             printf("City not found!\n");
+          }
+        }
+
 
     }
 
