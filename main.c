@@ -10,6 +10,10 @@ char cities[MAX_CITIES][50];
 int distance[MAX_CITIES][MAX_CITIES];
 int cityCount = 0;
 
+int totalDeliveries = 0;
+float totalDistance = 0, totalRevenue = 0, totalProfit = 0;
+
+
 
 void menu();
 void citymanagement();
